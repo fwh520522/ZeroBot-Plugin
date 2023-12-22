@@ -30,7 +30,7 @@ import (
 	//                          vvvvvvvvvvvvvv                          //
 	//                               vvvv                               //
 
-	//_ "github.com/FloatTech/ZeroBot-Plugin/plugin/antiabuse" // 违禁词
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/antiabuse" // 违禁词
 
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/chat" // 基础词库
 
@@ -226,7 +226,7 @@ func init() {
 	// 直接写死 URL 时，请更改下面第二个参数
 	url := flag.String("u", "ws://127.0.0.1:6700", "Set Url of WSClient.")
 	// 默认昵称
-	adana := flag.String("n", "蕾姆", "Set default nickname.")
+	adana := flag.String("n", "宝", "Set default nickname.")
 	prefix := flag.String("p", "/", "Set command prefix.")
 	runcfg := flag.String("c", "", "Run from config file.")
 	save := flag.String("s", "", "Save default config to file and exit.")
